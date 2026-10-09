@@ -1,0 +1,7 @@
+{
+  "include": ["src", "tests", "evaluation", "scripts", "app.py", "ask.py", "ingest.py", "check_setup.py"],
+  "exclude": ["**/__pycache__", ".venv", "assets", "chroma_db", "data", "logs"],
+  "extraPaths": ["."],
+  "venvPath": ".",
+  "venv": ".venv"
+}

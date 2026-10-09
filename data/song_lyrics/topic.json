@@ -1,0 +1,4 @@
+﻿{
+    "name":  "Song lyrics",
+    "description":  "Full lyrics of 25 songs as text files (one file per song, named artist - title) and an index table of artist and song with lyric length. Use for questions about what a song says, its lyrics, themes, and which artist sang it."
+}

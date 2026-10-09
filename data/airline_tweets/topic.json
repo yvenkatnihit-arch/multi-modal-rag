@@ -1,0 +1,4 @@
+﻿{
+    "name":  "Airline tweets",
+    "description":  "US airline customer feedback from Twitter: a table of about 14,600 tweets with sentiment (positive, neutral, negative), complaint reason, airline and date; 20 text files grouping negative complaint tweets by airline and reason; and a Word document with the airline customer care policy (delays, lost luggage compensation). Use for questions about airline sentiment, complaints, which airline has the most issues, and care policy."
+}

@@ -1,0 +1,4 @@
+﻿{
+    "name":  "Receipts",
+    "description":  "Scanned shop receipts from Malaysia: 25 receipt photos (JPG), two scanned PDF batches of receipts with no text layer, and a table of ground-truth fields (company, date, address, total). Use for questions about what was bought, receipt totals, dates, shop names and addresses."
+}

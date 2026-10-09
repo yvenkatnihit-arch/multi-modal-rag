@@ -1,0 +1,15 @@
+﻿.venv/
+.env
+chroma_db/
+logs/
+assets/
+__pycache__/
+.pytest_cache/
+.deepeval/
+
+# datasets are rebuilt by scripts/prepare_data.py; keep only the hand-written topic descriptions
+data/*
+!data/README.md
+!data/*/
+data/*/*
+!data/*/topic.json

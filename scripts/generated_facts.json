@@ -1,0 +1,150 @@
+{
+ "restaurants": {
+  "chart_avg_rating_by_city": {
+   "Faridabad": 1.87,
+   "Noida": 2.04,
+   "New Delhi": 2.44,
+   "Gurgaon": 2.65,
+   "Ghaziabad": 2.85,
+   "Ahmedabad": 4.16
+  },
+  "total_rows": 9551,
+  "mean_rating_all": 2.666
+ },
+ "fashion_products": {
+  "catalog_rows": 500,
+  "image_ids": [
+   28043,
+   30187,
+   23483,
+   27421,
+   14893,
+   38445,
+   17641,
+   6835,
+   43665,
+   13621,
+   1551,
+   13303,
+   20218,
+   56582,
+   44560,
+   39720,
+   50382,
+   48684,
+   34041,
+   37894,
+   56183,
+   55081,
+   51332,
+   27948,
+   1808,
+   12839,
+   44174,
+   36746,
+   4013,
+   42066
+  ],
+  "chart_counts": {
+   "Tshirts": 68,
+   "Casual Shoes": 38,
+   "Shirts": 35,
+   "Kurtas": 25,
+   "Watches": 23,
+   "Handbags": 23,
+   "Sports Shoes": 21,
+   "Tops": 20
+  }
+ },
+ "airline_tweets": {
+  "rows": 14640,
+  "negative": 9178,
+  "by_airline": {
+   "United": 3822,
+   "US Airways": 2913,
+   "American": 2759,
+   "Southwest": 2420,
+   "Delta": 2222,
+   "Virgin America": 504
+  },
+  "thread_files": 20,
+  "docx": "delay>3h -> meal voucher; lost luggage within 24h; cap 1500 dollars"
+ },
+ "song_lyrics": {
+  "songs": 25
+ },
+ "wildlife_reports": {
+  "survey_table": [
+   [
+    "Nairobi",
+    34,
+    5
+   ],
+   [
+    "Mombasa",
+    55,
+    12
+   ],
+   [
+    "Kisumu",
+    48,
+    9
+   ],
+   [
+    "Nakuru",
+    33,
+    26
+   ],
+   [
+    "Eldoret",
+    89,
+    7
+   ]
+  ],
+  "total_sightings": 259,
+  "total_relocations": 59,
+  "scanned_memo": "12 green snakes, Ngong forest reserve, next inspection 2 April 2025, budget 4800 dollars"
+ },
+ "receipts": {
+  "csv_rows": 25,
+  "sum_total": 916.23,
+  "scan_pdfs": {
+   "receipts_scan_batch1.pdf p.1": {
+    "company": "UNIHAKKA INTERNATIONAL SDN BHD",
+    "date": "03 APR 2018",
+    "address": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR",
+    "total": "$7.10"
+   },
+   "receipts_scan_batch1.pdf p.2": {
+    "company": "SOON HUAT MACHINERY ENTERPRISE",
+    "date": "11/01/2019",
+    "address": "NO.53 JALAN PUTRA 1, TAMAN SRI PUTRA, 81200 JOHOR BAHRU JOHOR",
+    "total": "327.00"
+   },
+   "receipts_scan_batch1.pdf p.3": {
+    "company": "99 SPEED MART S/B",
+    "date": "17-02-18",
+    "address": "LOT P. T. 2811, JALAN ANGSA, TAMAN BERKELEY 41150 KLANG, SELANGOR 1362-JLN DEVELOPMENT",
+    "total": "108.50"
+   },
+   "receipts_scan_batch2.pdf p.1": {
+    "company": "GARDENIA BAKERIES (KL) SDN BHD",
+    "date": "28/09/2017",
+    "address": "LOT 3, JALAN PELABUR 23/1, 40300 SHAH ALAM, SELANGOR.",
+    "total": "48.04"
+   },
+   "receipts_scan_batch2.pdf p.2": {
+    "company": "FUN N CHEER (MALURI)",
+    "date": "05/01/2018",
+    "address": "LOT 37636 , JALAN 6/37A, TAMAN BUKIT MALURI , 52100 KUALA LUMPUR",
+    "total": "29.80"
+   },
+   "receipts_scan_batch2.pdf p.3": {
+    "company": "PRINT EXPERT SDN BHD",
+    "date": "12/01/2018",
+    "address": "NO 18, 20, 22, JALAN BUNGA TANJONG 2/16, 40000 SHAH ALAM, SELANGOR",
+    "total": "4.25"
+   }
+  }
+ }
+}

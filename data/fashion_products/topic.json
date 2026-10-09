@@ -1,0 +1,4 @@
+﻿{
+    "name":  "Fashion products",
+    "description":  "Online fashion retail catalogs: a Myntra-style catalog table (product name, gender, category, article type, colour, season, year, usage), a Flipkart products spreadsheet (brand, category, prices, discount, rating, description), 30 product photos named by product id, and a chart of products per article type. Use for questions about clothing, shoes, accessories, brands, colours, prices and what a product looks like."
+}

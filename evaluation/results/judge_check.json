@@ -1,0 +1,398 @@
+{
+ "run": {
+  "timestamp": "2026-10-05T08:28:29+00:00",
+  "model": "gemini-2.5-flash",
+  "embedding_model": "gemini-embedding-001",
+  "top_k": 6,
+  "judge": true,
+  "questions": 3,
+  "wall_seconds": 53.8
+ },
+ "summary": {
+  "questions": 3,
+  "crashed": 0,
+  "answerable": 3,
+  "should_refuse": 0,
+  "retrieval": {
+   "questions": 3,
+   "precision": 0.5,
+   "recall": 1.0,
+   "full_recall": 3,
+   "no_recall": 0
+  },
+  "retrieval_in_context": {
+   "recall": 1.0,
+   "precision": 0.5
+  },
+  "routing_accuracy": 1.0,
+  "generation": {
+   "faithfulness": 0.8333333333333334,
+   "correctness": 0.8333333333333334,
+   "answer_relevance": 1.0,
+   "numbers_check_pass_rate": 1.0,
+   "phrase_check_pass_rate": 0.0
+  },
+  "refusal_accuracy": null,
+  "false_refusal_rate": 0.0,
+  "seconds": {
+   "mean": 10.143333333333333,
+   "p95": 8.85
+  },
+  "tokens_per_question": 9171.333333333334
+ },
+ "by_category": {
+  "cross_modal": {
+   "questions": 1,
+   "crashed": 0,
+   "answerable": 1,
+   "should_refuse": 0,
+   "retrieval": {
+    "questions": 1,
+    "precision": 0.8333333333333334,
+    "recall": 1.0,
+    "full_recall": 1,
+    "no_recall": 0
+   },
+   "retrieval_in_context": {
+    "recall": 1.0,
+    "precision": 0.8333333333333334
+   },
+   "routing_accuracy": 1.0,
+   "generation": {
+    "faithfulness": 0.5,
+    "correctness": 0.5,
+    "answer_relevance": 1.0,
+    "numbers_check_pass_rate": null,
+    "phrase_check_pass_rate": 0.0
+   },
+   "refusal_accuracy": null,
+   "false_refusal_rate": 0.0,
+   "seconds": {
+    "mean": 13.43,
+    "p95": 13.43
+   },
+   "tokens_per_question": 8528.0
+  },
+  "image_ocr": {
+   "questions": 1,
+   "crashed": 0,
+   "answerable": 1,
+   "should_refuse": 0,
+   "retrieval": {
+    "questions": 1,
+    "precision": 0.16666666666666666,
+    "recall": 1.0,
+    "full_recall": 1,
+    "no_recall": 0
+   },
+   "retrieval_in_context": {
+    "recall": 1.0,
+    "precision": 0.16666666666666666
+   },
+   "routing_accuracy": 1.0,
+   "generation": {
+    "faithfulness": 1.0,
+    "correctness": 1.0,
+    "answer_relevance": 1.0,
+    "numbers_check_pass_rate": 1.0,
+    "phrase_check_pass_rate": null
+   },
+   "refusal_accuracy": null,
+   "false_refusal_rate": 0.0,
+   "seconds": {
+    "mean": 8.85,
+    "p95": 8.85
+   },
+   "tokens_per_question": 5254.0
+  },
+  "table_calc": {
+   "questions": 1,
+   "crashed": 0,
+   "answerable": 1,
+   "should_refuse": 0,
+   "retrieval": {
+    "questions": 1,
+    "precision": 0.5,
+    "recall": 1.0,
+    "full_recall": 1,
+    "no_recall": 0
+   },
+   "retrieval_in_context": {
+    "recall": 1.0,
+    "precision": 0.5
+   },
+   "routing_accuracy": 1.0,
+   "generation": {
+    "faithfulness": 1.0,
+    "correctness": 1.0,
+    "answer_relevance": 1.0,
+    "numbers_check_pass_rate": 1.0,
+    "phrase_check_pass_rate": null
+   },
+   "refusal_accuracy": null,
+   "false_refusal_rate": 0.0,
+   "seconds": {
+    "mean": 8.15,
+    "p95": 8.15
+   },
+   "tokens_per_question": 13732.0
+  }
+ },
+ "failures": [
+  {
+   "id": "cross_skirt",
+   "category": "cross_modal",
+   "question": "What colour is the skirt in product photo 12839, and what colour does the catalog list for it?",
+   "why": [
+    "expected phrase(s) missing: ['Black']",
+    "low correctness 0.50",
+    "low faithfulness 0.50"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "photo_receipt_total",
+   "category": "image_ocr",
+   "question": "What was the total on receipt X51005361900?",
+   "reference": "The total was 18.00.",
+   "should_refuse": false,
+   "answer": "The total on receipt X51005361900 was 18.00 RM [1].",
+   "answerable": true,
+   "refusal_stage": null,
+   "error": null,
+   "sources": [
+    "receipts · X51005361900.jpg · image"
+   ],
+   "routed": [
+    "receipts"
+   ],
+   "retrieval": {
+    "precision": 0.16666666666666666,
+    "recall": 1.0,
+    "retrieved": 6,
+    "relevant_chunks": 1,
+    "relevant_total": 1,
+    "relevant_found": 1,
+    "missed": []
+   },
+   "retrieval_in_context": {
+    "precision": 0.16666666666666666,
+    "recall": 1.0,
+    "retrieved": 6,
+    "relevant_chunks": 1,
+    "relevant_total": 1,
+    "relevant_found": 1,
+    "missed": []
+   },
+   "calculations": [],
+   "seconds": 8.85,
+   "llm_calls": 2,
+   "tokens": {
+    "prompt": 5074,
+    "output": 101,
+    "thinking": 79
+   },
+   "routing_ok": true,
+   "false_refusal": false,
+   "generation": {
+    "numbers_ok": true,
+    "numbers_missing": [],
+    "contains_ok": null,
+    "contains_missing": [],
+    "faithfulness": 1.0,
+    "correctness": 1.0,
+    "relevance": 1.0,
+    "faithfulness_claims": [
+     {
+      "claim": "The total on receipt X51005361900 was 18.00 RM.",
+      "verdict": "supported",
+      "note": "The receipt X51005361900.jpg shows 'TOTAL 18.00'."
+     }
+    ],
+    "correctness_facts": [
+     {
+      "fact": "The total was 18.00.",
+      "status": "present"
+     }
+    ],
+    "relevance_reason": "The answer directly states the total on the specified receipt."
+   }
+  },
+  {
+   "id": "rest_sao_paulo",
+   "category": "table_calc",
+   "question": "How many restaurants are in São Paulo?",
+   "reference": "There are 20 restaurants in São Paulo (stored in the data as 'Sí£o Paulo').",
+   "should_refuse": false,
+   "answer": "There are 20 restaurants in São Paulo [C1].",
+   "answerable": true,
+   "refusal_stage": null,
+   "error": null,
+   "sources": [
+    "restaurants · zomato_restaurants.csv · calculation: count of rows where City == 'Sí£o Paulo' (20 of 9,551 rows) · table"
+   ],
+   "routed": [
+    "restaurants"
+   ],
+   "retrieval": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "retrieved": 6,
+    "relevant_chunks": 3,
+    "relevant_total": 1,
+    "relevant_found": 1,
+    "missed": []
+   },
+   "retrieval_in_context": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "retrieved": 6,
+    "relevant_chunks": 3,
+    "relevant_total": 1,
+    "relevant_found": 1,
+    "missed": []
+   },
+   "calculations": [
+    {
+     "ref": "C1",
+     "table": "restaurants/zomato_restaurants.csv",
+     "description": "count of rows where City == 'Sí£o Paulo'",
+     "ok": true,
+     "value": 20,
+     "rows": null,
+     "rows_matched": 20,
+     "rows_total": 9551,
+     "notes": [],
+     "suggestions": {},
+     "error": null
+    }
+   ],
+   "seconds": 8.15,
+   "llm_calls": 3,
+   "tokens": {
+    "prompt": 13174,
+    "output": 228,
+    "thinking": 330
+   },
+   "routing_ok": true,
+   "false_refusal": false,
+   "generation": {
+    "numbers_ok": true,
+    "numbers_missing": [],
+    "contains_ok": null,
+    "contains_missing": [],
+    "faithfulness": 1.0,
+    "correctness": 1.0,
+    "relevance": 1.0,
+    "faithfulness_claims": [
+     {
+      "claim": "There are 20 restaurants in São Paulo.",
+      "verdict": "supported",
+      "note": "C1 states there are 20 restaurants where City == 'Sí£o Paulo'."
+     }
+    ],
+    "correctness_facts": [
+     {
+      "fact": "There are 20 restaurants in São Paulo.",
+      "status": "present"
+     }
+    ],
+    "relevance_reason": "The answer directly states the number of restaurants in S\bão Paulo."
+   }
+  },
+  {
+   "id": "cross_skirt",
+   "category": "cross_modal",
+   "question": "What colour is the skirt in product photo 12839, and what colour does the catalog list for it?",
+   "reference": "The photo shows a light grey skirt, while the catalog lists its base colour as Black.",
+   "should_refuse": false,
+   "answer": "The skirt in product photo 12839 is light grey [1]. The catalog lists its base colour as Grey.",
+   "answerable": true,
+   "refusal_stage": null,
+   "error": null,
+   "sources": [
+    "fashion_products · images/12839.jpg · image"
+   ],
+   "routed": [
+    "fashion_products"
+   ],
+   "retrieval": {
+    "precision": 0.8333333333333334,
+    "recall": 1.0,
+    "retrieved": 6,
+    "relevant_chunks": 5,
+    "relevant_total": 2,
+    "relevant_found": 2,
+    "missed": []
+   },
+   "retrieval_in_context": {
+    "precision": 0.8333333333333334,
+    "recall": 1.0,
+    "retrieved": 6,
+    "relevant_chunks": 5,
+    "relevant_total": 2,
+    "relevant_found": 2,
+    "missed": []
+   },
+   "calculations": [
+    {
+     "ref": "C1",
+     "table": "fashion_products/styles_catalog.csv",
+     "description": "maximum of 'baseColour' where id == '12839'",
+     "ok": false,
+     "value": null,
+     "rows": null,
+     "rows_matched": 0,
+     "rows_total": 500,
+     "notes": [],
+     "suggestions": {},
+     "error": "column 'baseColour' holds text values, so sum/mean/median/min/max cannot be computed on it"
+    }
+   ],
+   "seconds": 13.43,
+   "llm_calls": 3,
+   "tokens": {
+    "prompt": 7385,
+    "output": 259,
+    "thinking": 884
+   },
+   "routing_ok": true,
+   "false_refusal": false,
+   "generation": {
+    "numbers_ok": null,
+    "numbers_missing": [],
+    "contains_ok": false,
+    "contains_missing": [
+     "Black"
+    ],
+    "faithfulness": 0.5,
+    "correctness": 0.5,
+    "relevance": 1.0,
+    "faithfulness_claims": [
+     {
+      "claim": "The skirt in product photo 12839 is light grey.",
+      "verdict": "supported",
+      "note": "Image 12839.jpg description states it is a 'light grey pleated skirt'."
+     },
+     {
+      "claim": "The catalog lists its base colour as Grey.",
+      "verdict": "unsupported",
+      "note": "The provided catalog data does not contain an entry for product ID 12839."
+     }
+    ],
+    "correctness_facts": [
+     {
+      "fact": "The photo shows a light grey skirt",
+      "status": "present"
+     },
+     {
+      "fact": "The catalog lists its base colour as Black",
+      "status": "wrong"
+     }
+    ],
+    "relevance_reason": "The answer directly provides both the color of the skirt in the photo and the color listed in the catalog."
+   }
+  }
+ ]
+}
